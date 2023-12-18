@@ -14,7 +14,7 @@ class CalendarEvent:
 
     TIME_FORMAT = TimeFormat('%Y%m%dT%H%M%S')
     EVENTS_PATH = os.path.join(os.environ['DIR_DESKTOP'], 'events.txt')
-    MAX_EVENTS = 4
+    MAX_EVENTS = 7
 
     @staticmethod
     def format_time(ut: int):
@@ -52,6 +52,7 @@ class CalendarEvent:
             (10, 2),
             (13, 2),
             (15, 2),
+            (18, 2),
         ]
 
     @staticmethod
@@ -63,6 +64,7 @@ class CalendarEvent:
 
     @staticmethod
     def build_random_day():
+        ut_now = Time.now().ut
         ut = CalendarEvent.ut_today_midnight()
         topics = CalendarEvent.get_events()
         i_day = 0
@@ -76,7 +78,7 @@ class CalendarEvent:
                 )
                 t_duration = h_duration * SECONDS_IN.HOUR
 
-                if ut_start > Time.now().ut:
+                if ut_start < ut_now:
                     continue
 
                 event = CalendarEvent(title, ut_start, t_duration)
