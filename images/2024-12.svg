@@ -1,0 +1,193 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" text-anchor="middle" font-family="Ubuntu Mono">
+  <g>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="200.0" y="88.33333333333333">Mon</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="400.0" y="88.33333333333333">Tue</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="600.0" y="88.33333333333333">Wed</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="800.0" y="88.33333333333333">Thu</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1000.0000000000001" y="88.33333333333333">Fri</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1200.0" y="88.33333333333333">Sat</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1400.0" y="88.33333333333333">Sun</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="100.0" y="100.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="120.0" y="123.33333333333333"/>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="300.0" y="100.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="320.0" y="123.33333333333333"/>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="500.0" y="100.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="520.0" y="123.33333333333333"/>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="700.0" y="100.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="720.0" y="123.33333333333333"/>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="900.0" y="100.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="919.9999999999999" y="123.33333333333333"/>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1100.0" y="100.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1120.0" y="123.33333333333333"/>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1300.0" y="100.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1319.9999999999998" y="123.33333333333333">1</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="100.0" y="216.66666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="120.0" y="240.0">2</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="300.0" y="216.66666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="320.0" y="240.0">3</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="500.0" y="216.66666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="520.0" y="240.0">4</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="700.0" y="216.66666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="720.0" y="240.0">5</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="900.0" y="216.66666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="919.9999999999999" y="240.0">6</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1100.0" y="216.66666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1120.0" y="240.0">7</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1300.0" y="216.66666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1319.9999999999998" y="240.0">8</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="100.0" y="333.3333333333333"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="120.0" y="356.6666666666667">9</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="300.0" y="333.3333333333333"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="320.0" y="356.6666666666667">10</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="500.0" y="333.3333333333333"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="520.0" y="356.6666666666667">11</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="700.0" y="333.3333333333333"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="720.0" y="356.6666666666667">12</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="900.0" y="333.3333333333333"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="919.9999999999999" y="356.6666666666667">13</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1100.0" y="333.3333333333333"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1120.0" y="356.6666666666667">14</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1300.0" y="333.3333333333333"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1319.9999999999998" y="356.6666666666667">15</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="100.0" y="450.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="120.0" y="473.3333333333333">16</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="300.0" y="450.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="320.0" y="473.3333333333333">17</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="500.0" y="450.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="520.0" y="473.3333333333333">18</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="700.0" y="450.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="720.0" y="473.3333333333333">19</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="900.0" y="450.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="919.9999999999999" y="473.3333333333333">20</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1100.0" y="450.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1120.0" y="473.3333333333333">21</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1300.0" y="450.0"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1319.9999999999998" y="473.3333333333333">22</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="100.0" y="566.6666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="120.0" y="590.0">23</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="300.0" y="566.6666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="320.0" y="590.0">24</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="500.0" y="566.6666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="520.0" y="590.0">25</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="700.0" y="566.6666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="720.0" y="590.0">26</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="900.0" y="566.6666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="919.9999999999999" y="590.0">27</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1100.0" y="566.6666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1120.0" y="590.0">28</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1300.0" y="566.6666666666666"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1319.9999999999998" y="590.0">29</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="100.0" y="683.3333333333334"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="120.0" y="706.6666666666667">30</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="300.0" y="683.3333333333334"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="320.0" y="706.6666666666667">31</text>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="500.0" y="683.3333333333334"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="520.0" y="706.6666666666667"/>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="700.0" y="683.3333333333334"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="720.0" y="706.6666666666667"/>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="900.0" y="683.3333333333334"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="919.9999999999999" y="706.6666666666667"/>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1100.0" y="683.3333333333334"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1120.0" y="706.6666666666667"/>
+  </g>
+  <g>
+    <rect fill="none" stroke="black" width="200.0" height="116.66666666666667" x="1300.0" y="683.3333333333334"/>
+    <text fill="black" stroke="none" font-size="20" width="200.0" height="116.66666666666667" x="1319.9999999999998" y="706.6666666666667"/>
+  </g>
+  <text x="800.0" y="50.99999999999999" font-size="30">2024 December</text>
+</svg>
