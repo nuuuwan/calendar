@@ -1,7 +1,8 @@
 import webbrowser
 from dataclasses import dataclass
 
-from utils import Time, TimeFormat, Log
+from utils import Log, Time, TimeFormat
+
 log = Log('CalendarEvent')
 
 
