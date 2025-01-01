@@ -3,29 +3,18 @@ import os
 
 from utils import Log, TimeFormat, _
 
+from cal.AbstractCalendar import AbstractCalendar
 from cal.HOLIDAYS import HOLIDAYS
 
 log = Log("MonthCalendar")
 
 
-class MonthCalendar:
-    ASPECT_RATIO = (0.5 + 8.3) / 11.7
-    WIDTH = 1_200
-    HEIGHT = int(WIDTH * ASPECT_RATIO)
-    PADDING = 100
-    DISPLAY_WIDTH = WIDTH - 2 * PADDING
-    DISPLAY_HEIGHT = HEIGHT - 2 * PADDING
+class MonthCalendar(AbstractCalendar):
 
     N_X = 7
     N_Y = 6
-    BOX_WIDTH = DISPLAY_WIDTH / N_X
-    BOX_HEIGHT = DISPLAY_HEIGHT / N_Y
-
-    @staticmethod
-    def point(px, py):
-        x = int(MonthCalendar.PADDING + px * (MonthCalendar.DISPLAY_WIDTH))
-        y = int(MonthCalendar.PADDING + py * (MonthCalendar.DISPLAY_HEIGHT))
-        return dict(x=x, y=y)
+    BOX_WIDTH = AbstractCalendar.DISPLAY_WIDTH / N_X
+    BOX_HEIGHT = AbstractCalendar.DISPLAY_HEIGHT / N_Y
 
     def __init__(self, year, month):
         self.year = year
