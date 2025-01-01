@@ -1,5 +1,4 @@
 import calendar
-import os
 
 from utils import Log, TimeFormat, _
 
@@ -20,13 +19,12 @@ class MonthCalendar(AbstractCalendar):
         self.year = year
         self.month = month
 
-    @property
-    def time(self):
-        return TimeFormat("%Y-%m").parse(f"{self.year}-{self.month:02d}")
+    def __str__(self):
+        return f"{self.year}-{self.month:02d}"
 
     @property
-    def svg_path(self):
-        return os.path.join("images", f"{self.year}-{self.month:02d}.svg")
+    def time_format(self):
+        return TimeFormat("%Y-%m")
 
     def render_title(self):
         return _(
@@ -144,8 +142,8 @@ class MonthCalendar(AbstractCalendar):
 
         return header_box_row
 
-    def draw(self):
-        svg = _(
+    def render(self):
+        return _(
             "svg",
             self.render_header_box_row()
             + self.render_box_grid()
@@ -156,6 +154,3 @@ class MonthCalendar(AbstractCalendar):
                 font_family="Ubuntu Mono",
             ),
         )
-        svg.store(self.svg_path)
-        log.info(f"Wrote {self.svg_path}")
-        os.startfile(self.svg_path)
