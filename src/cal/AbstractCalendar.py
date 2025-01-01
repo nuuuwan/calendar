@@ -1,8 +1,7 @@
-import abc
+from abc import ABC
 
 
-@abc
-class AbstractCalendar:
+class AbstractCalendar(ABC):
     ASPECT_RATIO = (0.5 + 8.3) / 11.7
     WIDTH = 1_200
     HEIGHT = int(WIDTH * ASPECT_RATIO)
