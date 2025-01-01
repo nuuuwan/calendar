@@ -1,0 +1,2 @@
+class WeekCalendar:
+    pass  # TODO
