@@ -159,9 +159,3 @@ class MonthCalendar(AbstractCalendar):
         svg.store(self.svg_path)
         log.info(f"Wrote {self.svg_path}")
         os.startfile(self.svg_path)
-
-
-if __name__ == "__main__":
-    MonthCalendar(2024, 12).draw()
-    MonthCalendar(2025, 1).draw()
-    MonthCalendar(2025, 2).draw()
