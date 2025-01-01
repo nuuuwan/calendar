@@ -50,6 +50,53 @@ class MonthCalendar:
             ),
         )
 
+    def render_box_background(self, x, y, holiday_text):
+        return _(
+            "rect",
+            None,
+            dict(
+                fill="#eee" if holiday_text else "#fff",
+                stroke="black",
+                width=self.BOX_WIDTH,
+                height=self.BOX_HEIGHT,
+            )
+            | self.point(x / self.N_X, y / self.N_Y),
+        )
+
+    def render_box_day(self, x, y, day):
+        return _(
+            "text",
+            f"{day}" if day != 0 else "",
+            dict(
+                fill="black",
+                stroke="none",
+                font_size=20,
+                width=self.BOX_WIDTH,
+                height=self.BOX_HEIGHT,
+            )
+            | self.point(
+                (x + 0.1) / self.N_X,
+                (y + 0.2) / self.N_Y,
+            ),
+        )
+
+    def render_box_holiday(self, x, y, holiday_text):
+        return _(
+            "text",
+            holiday_text,
+            dict(
+                fill="#888",
+                stroke="none",
+                font_size=12,
+                width=self.BOX_WIDTH,
+                height=self.BOX_HEIGHT,
+            )
+            | self.point(
+                (x + 0.1) / self.N_X,
+                (y + 0.8) / self.N_Y,
+            ),
+        )
+
     def render_box(self, x, y, day):
         if not day:
             return None
@@ -60,47 +107,9 @@ class MonthCalendar:
         return _(
             "g",
             [
-                _(
-                    "rect",
-                    None,
-                    dict(
-                        fill="#eee" if holiday_text else "#fff",
-                        stroke="black",
-                        width=self.BOX_WIDTH,
-                        height=self.BOX_HEIGHT,
-                    )
-                    | self.point(x / self.N_X, y / self.N_Y),
-                ),
-                _(
-                    "text",
-                    f"{day}" if day != 0 else "",
-                    dict(
-                        fill="black",
-                        stroke="none",
-                        font_size=20,
-                        width=self.BOX_WIDTH,
-                        height=self.BOX_HEIGHT,
-                    )
-                    | self.point(
-                        (x + 0.1) / self.N_X,
-                        (y + 0.2) / self.N_Y,
-                    ),
-                ),
-                _(
-                    "text",
-                    holiday_text,
-                    dict(
-                        fill="#888",
-                        stroke="none",
-                        font_size=12,
-                        width=self.BOX_WIDTH,
-                        height=self.BOX_HEIGHT,
-                    )
-                    | self.point(
-                        (x + 0.1) / self.N_X,
-                        (y + 0.8) / self.N_Y,
-                    ),
-                ),
+                self.render_box_background(x, y, holiday_text),
+                self.render_box_day(x, y, day),
+                self.render_box_holiday(x, y, holiday_text),
             ],
         )
 
