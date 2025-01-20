@@ -134,29 +134,31 @@ class WeekCalendar(AbstractCalendar):
     def render_header_box_row(self):
 
         header_box_row = []
-        for x, day_name in enumerate(list(calendar.day_abbr)):
-            header_box = _(
-                "g",
-                [
-                    _(
-                        "text",
-                        day_name,
-                        dict(
-                            fill="black",
-                            stroke="none",
-                            text_anchor="middle",
-                            font_size=20,
-                            width=self.DISPLAY_WIDTH / 7,
-                            height=self.DISPLAY_HEIGHT / 6,
-                        )
-                        | self.point(
-                            (x + 0.5) / self.N_X,
-                            (-0.1) / self.N_Y,
+        for y in [-0.015, 1.025]:
+            for x, day_name in enumerate(list(calendar.day_abbr)):
+                header_box = _(
+                    "g",
+                    [
+                        _(
+                            "text",
+                            day_name,
+                            dict(
+                                fill="black",
+                                stroke="none",
+                                text_anchor="middle",
+                                dominant_baseline="middle",
+                                font_size=20,
+                                width=self.DISPLAY_WIDTH / 7,
+                                height=self.DISPLAY_HEIGHT / 6,
+                            )
+                            | self.point(
+                                (x + 0.5) / self.N_X,
+                                (y),
+                            ),
                         ),
-                    ),
-                ],
-            )
-            header_box_row.append(header_box)
+                    ],
+                )
+                header_box_row.append(header_box)
 
         return header_box_row
 
@@ -164,40 +166,43 @@ class WeekCalendar(AbstractCalendar):
 
         header_box_col = []
         time_format = TimeFormat("%I")
-        for y in range(self.N_Y):
-            time_start = Time(
-                self.time.ut + (y * 2 + 6) * TimeUnit.SECONDS_IN.HOUR
-            )
-            time_end = time_start + TimeDelta(TimeUnit.SECONDS_IN.HOUR * 2)
-            time_str = ""
-            if 0 < y < self.N_Y - 1:
-                time_str = (
-                    time_format.stringify(time_start)
-                    + " - "
-                    + time_format.stringify(time_end)
+        for x in [-0.035, 1.035]:
+            for y in range(self.N_Y):
+                time_start = Time(
+                    self.time.ut + (y * 2 + 6) * TimeUnit.SECONDS_IN.HOUR
                 )
-            header_box = _(
-                "g",
-                [
-                    _(
-                        "text",
-                        time_str,
-                        dict(
-                            fill="black",
-                            stroke="none",
-                            text_anchor="middle",
-                            font_size=15,
-                            width=self.DISPLAY_WIDTH / 7,
-                            height=self.DISPLAY_HEIGHT / 6,
-                        )
-                        | self.point(
-                            -0.25 / self.N_X,
-                            (y + 0.5) / self.N_Y,
+                time_end = time_start + TimeDelta(
+                    TimeUnit.SECONDS_IN.HOUR * 2
+                )
+                time_str = ""
+                if 0 < y < self.N_Y - 1:
+                    time_str = (
+                        time_format.stringify(time_start)
+                        + " - "
+                        + time_format.stringify(time_end)
+                    )
+                header_box = _(
+                    "g",
+                    [
+                        _(
+                            "text",
+                            time_str,
+                            dict(
+                                fill="black",
+                                stroke="none",
+                                text_anchor="middle",
+                                font_size=15,
+                                width=self.DISPLAY_WIDTH / 7,
+                                height=self.DISPLAY_HEIGHT / 6,
+                            )
+                            | self.point(
+                                x,
+                                (y + 0.5) / self.N_Y,
+                            ),
                         ),
-                    ),
-                ],
-            )
-            header_box_col.append(header_box)
+                    ],
+                )
+                header_box_col.append(header_box)
 
         return header_box_col
 
