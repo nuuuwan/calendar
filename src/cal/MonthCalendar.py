@@ -116,29 +116,30 @@ class MonthCalendar(AbstractCalendar):
     def render_header_box_row(self):
 
         header_box_row = []
-        for x, day_name in enumerate(list(calendar.day_abbr)):
-            header_box = _(
-                "g",
-                [
-                    _(
-                        "text",
-                        day_name,
-                        dict(
-                            fill="black",
-                            stroke="none",
-                            text_anchor="middle",
-                            font_size=20,
-                            width=self.DISPLAY_WIDTH / 7,
-                            height=self.DISPLAY_HEIGHT / 6,
-                        )
-                        | self.point(
-                            (x + 0.5) / self.N_X,
-                            (-0.1) / self.N_Y,
+        for y in [-0.015, 1.025]:
+            for x, day_name in enumerate(list(calendar.day_abbr)):
+                header_box = _(
+                    "g",
+                    [
+                        _(
+                            "text",
+                            day_name,
+                            dict(
+                                fill="black",
+                                stroke="none",
+                                text_anchor="middle",
+                                font_size=20,
+                                width=self.DISPLAY_WIDTH / 7,
+                                height=self.DISPLAY_HEIGHT / 6,
+                            )
+                            | self.point(
+                                (x + 0.5) / self.N_X,
+                                y,
+                            ),
                         ),
-                    ),
-                ],
-            )
-            header_box_row.append(header_box)
+                    ],
+                )
+                header_box_row.append(header_box)
 
         return header_box_row
 
