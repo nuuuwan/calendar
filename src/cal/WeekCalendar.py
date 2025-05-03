@@ -11,7 +11,7 @@ log = Log("WeekCalendar")
 class WeekCalendar(AbstractCalendar):
 
     N_X = 7
-    N_Y = 6
+    N_Y = 8
     BOX_WIDTH = AbstractCalendar.DISPLAY_WIDTH / N_X
     BOX_HEIGHT = AbstractCalendar.DISPLAY_HEIGHT / N_Y
 
@@ -169,11 +169,9 @@ class WeekCalendar(AbstractCalendar):
         for x in [-0.035, 1.035]:
             for y in range(self.N_Y):
                 time_start = Time(
-                    self.time.ut + (y * 2 + 6) * TimeUnit.SECONDS_IN.HOUR
+                    self.time.ut + (y * 2 + 4) * TimeUnit.SECONDS_IN.HOUR
                 )
-                time_end = time_start + TimeDelta(
-                    TimeUnit.SECONDS_IN.HOUR * 2
-                )
+                time_end = time_start + TimeDelta(TimeUnit.SECONDS_IN.HOUR * 2)
                 time_str = ""
                 if 0 < y < self.N_Y - 1:
                     time_str = (
