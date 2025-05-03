@@ -35,13 +35,26 @@ class WeekCalendar(AbstractCalendar):
     def time_format(self):
         return TimeFormat("%Y-%m-%d")
 
+    @property
+    def week_num(self):
+        # HACK! Should be implemented in Time
+        ut = self.time_start.ut
+        year = (int)(TimeFormat("%Y").stringify(self.time_start))
+        ut0 = TimeFormat("%Y").parse(f"{year}").ut
+        week_num = int(((ut - ut0)) // TimeUnit.SECONDS_IN.DAY // 7 + 1)
+        return week_num
+
+    @property
+    def title(self):
+        date_start = self.time_format.stringify(self.time_start)
+        date_end = self.time_format.stringify(self.time_end)
+
+        return f"{date_start} to {date_end} (Week {self.week_num})"
+
     def render_title(self):
-        time_format = self.time_format
         return _(
             "text",
-            time_format.stringify(self.time_start)
-            + " to "
-            + time_format.stringify(self.time_end),
+            self.title,
             self.point(0.5, -0.07)
             | dict(
                 font_size=30,
