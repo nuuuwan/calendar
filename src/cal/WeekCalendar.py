@@ -184,7 +184,9 @@ class WeekCalendar(AbstractCalendar):
                 time_start = Time(
                     self.time.ut + (y * 2 + 6) * TimeUnit.SECONDS_IN.HOUR
                 )
-                time_end = time_start + TimeDelta(TimeUnit.SECONDS_IN.HOUR * 2)
+                time_end = time_start + TimeDelta(
+                    TimeUnit.SECONDS_IN.HOUR * 2
+                )
                 time_str = ""
                 if 0 < y < self.N_Y - 1:
                     time_str = (

@@ -36,4 +36,3 @@ class AbstractCalendar(ABC):
         svg = self.render()
         svg.store(self.svg_path)
         log.info(f"Wrote {self.svg_path}")
-       
