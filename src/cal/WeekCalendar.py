@@ -114,14 +114,14 @@ class WeekCalendar(AbstractCalendar):
             return None
 
         holiday_text = (
-            HOLIDAYS.get(self.year, {}).get(self.month, {}).get(day, "")
+            HOLIDAYS.get(day.year, {}).get(day.month, {}).get(day.day, "")
         )
 
         return _(
             "g",
             [
                 self.render_box_background(x, y, holiday_text),
-                self.render_box_day(x, y, day) if (y == 0) else None,
+                self.render_box_day(x, y, day.day) if (y == 0) else None,
                 (
                     self.render_box_holiday(x, y, holiday_text)
                     if (y == self.N_Y - 1)
@@ -140,7 +140,7 @@ class WeekCalendar(AbstractCalendar):
         for i, day in enumerate(days):
             x = i % self.N_X
             for y in range(self.N_Y):
-                box = self.render_box(x, y, day.day)
+                box = self.render_box(x, y, day)
                 box_list.append(box)
         return box_list
 
@@ -178,11 +178,11 @@ class WeekCalendar(AbstractCalendar):
     def render_header_box_col(self):
 
         header_box_col = []
-        time_format = TimeFormat("%I")
+        time_format = TimeFormat("%I%p")
         for x in [-0.035, 1.035]:
             for y in range(self.N_Y):
                 time_start = Time(
-                    self.time.ut + (y * 2 + 4) * TimeUnit.SECONDS_IN.HOUR
+                    self.time.ut + (y * 2 + 6) * TimeUnit.SECONDS_IN.HOUR
                 )
                 time_end = time_start + TimeDelta(TimeUnit.SECONDS_IN.HOUR * 2)
                 time_str = ""
@@ -202,7 +202,7 @@ class WeekCalendar(AbstractCalendar):
                                 fill="black",
                                 stroke="none",
                                 text_anchor="middle",
-                                font_size=15,
+                                font_size=10,
                                 width=self.DISPLAY_WIDTH / 7,
                                 height=self.DISPLAY_HEIGHT / 6,
                             )

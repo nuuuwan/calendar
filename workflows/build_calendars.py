@@ -6,5 +6,5 @@ if __name__ == "__main__":
     for month in [6, 7, 8]:
         MonthCalendar(year, month).draw()
 
-    for month, day in [[5, 5], [5, 12], [5, 19]]:
+    for month, day in [[5, 26], [6, 2], [6, 9]]:
         WeekCalendar(year, month, day).draw()
