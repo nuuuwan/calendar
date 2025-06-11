@@ -43,7 +43,7 @@ HOLIDAYS = {
             8: "Nikini Poya",
         },
         9: {
-            5: "Prophet's Birthday",
+            5: "PM's Birthday",
             7: "Binara Poya",
         },
         10: {

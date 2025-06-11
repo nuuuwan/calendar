@@ -152,6 +152,6 @@ class MonthCalendar(AbstractCalendar):
             dict(
                 width=self.WIDTH,
                 height=self.HEIGHT,
-                font_family="Ubuntu Mono",
+                font_family="Menlo",
             ),
         )

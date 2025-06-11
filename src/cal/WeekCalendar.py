@@ -178,15 +178,13 @@ class WeekCalendar(AbstractCalendar):
     def render_header_box_col(self):
 
         header_box_col = []
-        time_format = TimeFormat("%I%p")
+        time_format = TimeFormat("%H")
         for x in [-0.035, 1.035]:
             for y in range(self.N_Y):
                 time_start = Time(
                     self.time.ut + (y * 2 + 6) * TimeUnit.SECONDS_IN.HOUR
                 )
-                time_end = time_start + TimeDelta(
-                    TimeUnit.SECONDS_IN.HOUR * 2
-                )
+                time_end = time_start + TimeDelta(TimeUnit.SECONDS_IN.HOUR * 2)
                 time_str = ""
                 if 0 < y < self.N_Y - 1:
                     time_str = (
@@ -229,6 +227,6 @@ class WeekCalendar(AbstractCalendar):
             dict(
                 width=self.WIDTH,
                 height=self.HEIGHT,
-                font_family="Ubuntu Mono",
+                font_family="Menlo",
             ),
         )

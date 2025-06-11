@@ -4,11 +4,11 @@ if __name__ == "__main__":
 
     year = 2025
 
-    YearCalendar(year).draw()
-    YearCalendar(2026).draw()
+    # YearCalendar(year).draw()
+    # YearCalendar(2026).draw()
 
-    for month in [6, 7, 8]:
+    for month in [9]:
         MonthCalendar(year, month).draw()
 
-    for month, day in [[5, 26], [6, 2], [6, 9]]:
+    for month, day in [[6, 16], [6, 23], [6, 30]]:
         WeekCalendar(year, month, day).draw()
